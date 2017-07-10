@@ -1,0 +1,112 @@
+<style>
+	*{
+		font-size: 1em;
+	}
+	a:hover, input[type=checkbox]:hover, input[type=radio]:hover, label:hover, option:hover{
+		opacity: 1;
+		font-weight: bold;
+		font-size: 1.3em;
+		color: green;
+	}
+	head, h1 {
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+	}
+	form {
+		margin: 1em;
+	}
+	label {
+		font-size: 1em;
+		font-weight: bold;
+	}
+	legend {
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+	textarea {
+		font-size: 0.8em;
+		height: 10%;
+		width: 100%;
+		resize: none;
+		
+	}
+	input[type=Submit], input[type=Reset] {
+		padding: 10px 10px;
+		font-size: 0.8em;
+		font-weight: bold;
+		text-align: center;
+	}
+	input[type=text] {
+		required: required;
+	}
+	footer {
+		font-size: 0.6em;
+	}
+</style>
+<head>
+	<h1>Music Servey</h1>
+</head>
+<body>
+	<form method="post"
+		action="http://webdevbasics.net/scripts/demo.php">
+		<label for="name">Name: </label><br>
+		<input type="text" maxlength="30" name="name" id="name" required><br>
+		<label for="email">Email: </label><br>
+		<input type="email" name="email" id="email" required><br>
+		<fieldset>
+			<legend>Select your favorite music genre</legend>
+			<input type="checkbox" name="genre 1" id="pop" value="pop" checked> 
+			<label for="pop">Pop</label> <br>
+			<input type="checkbox" name="genre 2" id="Classical" value="Classical"> 
+			<label for="Classical">Classical</label> <br>
+			<input type="checkbox" name="genre 3" id="Rock" value="Rock"> 
+			<label for="Rock">Rock</label> <br>
+			<input type="checkbox" name="genre 4" id="Jazz" value="Jazz"> 
+			<label for="Jazz">Jazz</label> <br>
+			<input type="checkbox" name="genre 5" id="Hip-Hop" value="Hip-Hop"> 
+			<label for="Hip-Hop">Hip-Hop</label> <br>
+			<input type="checkbox" name="genre 6" id="Rap" value="Rap"> 
+			<label for="Rap">Rap</label> <br>
+			<input type="checkbox" name="genre 7" id="Techno" value="Techno"> 
+			<label for="Techno">Techno</label> <br>
+			<input type="checkbox" name="genre 8" id="Dubstep" value="Dubstep"> 
+			<label for="Dubstep">Dubstep</label> <br>
+		</fieldset>
+		<fieldset>
+			<legend>How often do you purchase music</legend>
+			<input type="radio" name="purchase" value="Daily" id="Daily"> 
+			<label for="Daily">Daily</label> <br>
+			<input type="radio" name="purchase" value="Weekly" id="Weekly"> 
+			<label for="Weekly">Weekly</label> <br>
+			<input type="radio" name="purchase" value="Monthly" id="Monthly"> 
+			<label for="Monthly">Monthly</label> <br>
+			<input type="radio" name="purchase" value="Semi-Annually" id="Semi-Annually"> 
+			<label for="Semi-Annually">Semi-Annually</label> <br>
+			<input type="radio" name="purchase" value="Annually" id="Annually"> 
+			<label for="Annually">Annually</label> <br>
+			<input type="radio" name="purchase" value="Almost never" id="Almost never"> 
+			<label for="Almost never">Almost never</label> <br>
+		</fieldset>
+		<fieldset>
+			<legend>Select the location in which you listen to music most</legend>
+			<select size="3" name="location" style="width: 60ch" required>
+			<option value="At home" name="At home"> At home
+			<option value="At work" name="At work"> At work
+			<option value="In the car" name="In the car"> In the car
+			<option value="On the go" name="On the go"> On the go
+			</select>
+		</fieldset>
+		<br>
+		<label for="musicRole">What role does music play in your life?</label><br>
+		<textarea maxlength="1600" name="Music Role" id="musicRole" required></textarea>
+		<br>
+		<br>
+		<input type="Submit">
+		<input type="Reset">
+	</form>
+</body>
+<footer>
+Allie Beckman <br>
+<a href="beckmana2704@student.faytechcc.edu">Contact via Email</a>
+</footer>

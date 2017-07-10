@@ -1,0 +1,31 @@
+<style>
+	textarea{
+		height: 50%;
+		width: 50%;
+		padding: 20px;
+		resize: none;
+	}
+	footer{
+		font-size: 0.6em;
+	}
+</style>
+<head>
+	<h1>Contact us</h1>
+</head>
+<body>
+	<form method="post"
+		  action="http://webdevbasics.net/scripts/demo.php">
+		<label for="userEmail">Email:</label>
+		<input type="email" required="required" name="userEmail">
+		<br>
+		<br>
+		<textarea maxlength="1600" name="userComments" required="required"></textarea>
+		<br>
+		<input type="Submit">
+		<input type="Reset">
+	</form>
+</body>
+<footer>
+	Allie Beckman<br>
+	beckmana2704@student.faytechcc.edu
+</footer>
